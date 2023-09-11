@@ -1,0 +1,13 @@
+name: Python Autoactions
+on: [push]
+jobs:
+  build:
+    runs-on: python-3.10
+    steps:
+    - name: test build
+      with:
+        runCmd: |
+          make install
+          make lint
+          make test
+          make format
