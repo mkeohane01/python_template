@@ -1,4 +1,4 @@
-def test_fun()
+def example_fun():
   pass
 
 if __name__ == "__main__":
